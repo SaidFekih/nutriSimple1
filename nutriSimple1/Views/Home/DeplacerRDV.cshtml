@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "DeplacerRDV";
+}
+
+<h2></h2>
+<br />
+<h3 class="text-center">@ViewBag.Message</h3>
+<br /><hr />
+
+<body class="container mx-auto">
+    <div class="row">
+        <div class="mx-auto my-auto">
+            <div class=" card col-lg-10 col-md-12 col-sm-12 mx-auto bg-light">
+                <div class="card-body">
+                    <h3 class="card-title text-center font-weight-bold">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-calendar2-check" viewBox="0 0 16 16">
+                            <path d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                            <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
+                        </svg>
+                        Gestion des RDV
+                    </h3>
+                    <p class="card-text"></p>
+
+                </div>
+                <div class="row">
+                    <div class="btn-group mx-auto" role="group" aria-label="">
+                        <a class="btn btn-success bg-ns-primary  col-sm-10 col-md-4 text-lg-center" data-toggle="collapse" href="#vosRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><i class="bi bi-calendar2-check"></i><h5>Vos rendez-vous</h5></a>
+                        <a class="btn btn-success bg-ns-primary col-sm-10 col-md-4 text-wrap" data-toggle="collapse" href="#autreRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><h5>Autres disponibilités</h5></a>
+                        <a class="btn btn-success bg-ns-primary col-md-4 text-wrap " data-toggle="collapse" href="#politiqueAnnulation" role="button" aria-expanded="false" aria-controls="politiqueAnnulation"><h5>Politique rendez-vous</h5></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="collapsing " id="vosRdv">
+                            <div class="card card-body bg-transparent border-0">
+                                <div class="card">
+                                    <h5 class="card-header">Afficher date RDV</h5>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Le nom du diététiste </h5>
+                                        <p class="card-text">TÉLÉCONSULTATION (Skype/Teams, Telephone, FaceTime).</p>
+                                        <a href="#" class="btn btn-success font-weight-bold">DÉPLACER</a>
+                                        <a href="#" class="btn btn-success font-weight-bold ">Annuler</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card card-body bg-transparent border-0">
+                                <div class="card">
+                                    <h5 class="card-header">Afficher date RDV</h5>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Le nom du diététiste </h5>
+                                        <p class="card-text">TÉLÉCONSULTATION (Skype/Teams, Telephone, FaceTime).</p>
+                                        <a href="#" class="btn btn-success font-weight-bold">DÉPLACER</a>
+                                        <a href="#" class="btn btn-success font-weight-bold">Annuler</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="collapse mb-1" id="autreRdv">
+                            <div class="card card-body">
+                                <p class="text-break">
+                                    Afficher une liste des places disponibles.
+                                    Pour éviter la facturation de la rencontre prévue, vous devez annuler 48h AVANT votre rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
+                                    Toute requête d'annulation à l'intérieur d'une période de 2 jours avant un rendez-vous doit se faire par téléphone.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="collapse mb-1" id="politiqueAnnulation">
+                            <div class="card card-body ">
+
+                                <p class="w-75">
+                                    Pour éviter la facturation de la rencontre prévue, vous devez annuler 48h AVANT votre rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
+                                    Toute requête d'annulation à l'intérieur d'une période de 2 jours avant un rendez-vous doit se faire par téléphone.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+

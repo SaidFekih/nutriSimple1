@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Rendezvous";
+    
+
+}
+
+<h2>Rendezvous</h2>
+<br />
+<h3>@ViewBag.Message</h3>
+<br />
+
+<body class="container mx-auto">
+    <div class="alert bg-light alert-primary mx-auto my-auto w-100 text-dark">
+
+        <h2 class="font-weight-bold " style="color: #82c143;">Planifier/Déplacer vos rendez-vous</h2> <br>
+        <h4 class="font-weight-bold"> Voici vos rendez-vous à venir.</h4> <br>
+
+        <P>
+            Pour éviter la facturation de la rencontre prévue, vous devez annuler <b> 44448h AVANT </b> votre
+            rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
+        </P>
+        <p>
+            Toute requête d'annulation à l'intérieur d'une période de 2 jours avant un rendez-vous doit se faire par
+            téléphone.
+        <p class="font-italic"> Votre nutritionniste, Marise Charron</p>
+        </p>
+
+        <hr>
+        <div>
+            <p class="font-weight-bold"> Samedi, le 26 Juin 2021 à 10:00</p>
+            <p>
+                avec<samp class="font-weight-bold " style="color:#ff4c1f;"> Marise Charron</samp> en TÉLÉCONSULTATION
+                (Skype/Teams, Telephone, FaceTime)
+            </p>
+        </div>
+
+        <div class="row mx-auto w-75" style="">
+
+            <button type="button"
+                    class="btn text-white font-weight-bolder col-xs-12 col-sm-12 col-md-2 col-lg-2 mt-1 mx-1 "
+                    style="background-color:#82c143;" onclick="window.location.href = '/Home/AutresRDV';">
+                Deplacer
+            </button>
+            <button type="button"
+                    class="btn text-white font-weight-bold col-xs-12 col-sm-12 col-md-2 col-lg-2 mt-1 mx-1"
+                    style="background-color:#82c143;">
+                Annuler
+            </button>
+            <button type="button"
+                    class="btn  text-white font-weight-normal col-xs-12 col-sm-12 col-md-2 col-lg-2 mt-1 mx-1"
+                    style="background-color:#82c143;" onclick="window.location.href = '/Home/DeplacerRDV';">
+                Autres rendez-vous
+            </button>
+            <button type="button" class="btn text-white font-italic col-xs-12 col-sm-12 col-md-2 col-lg-2 mt-1 mx-1"
+                    style="background-color:#82c143;" onclick="window.location.herf = '/Home/Index';">
+                Retour
+            </button>
+        </div>
+    </div>
+
+</body>
+
