@@ -27,9 +27,9 @@
                 </div>
                 <div class="row">
                     <div class="btn-group btn-group-toggle mx-auto" role="group" aria-label="">
-                        <a class="btn ns-btn col-sm-10 col-md-4 text-lg-center" data-toggle="collapse" href="#vosRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><i class="bi bi-calendar2-check"></i><h5>Vos rendez-vous</h5></a>
-                        <a class="btn ns-btn col-sm-10 col-md-4 text-wrap" data-toggle="collapse" href="#autreRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><h5>Autres disponibilités</h5></a>
-                        <a class="btn ns-btn col-md-4 text-wrap " data-toggle="collapse" href="#politiqueAnnulation" role="button" aria-expanded="false" aria-controls="politiqueAnnulation"><h5>Politique rendez-vous</h5></a>
+                        <a class="btn ns-btn col-sm-10 col-md-4 text-lg-center" id="btnRDV" data-toggle="collapse" href="#vosRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><i class="bi bi-calendar2-check"></i><h5>Vos rendez-vous</h5></a>
+                        <a class="btn ns-btn col-sm-10 col-md-4 text-wrap" id="btnAutre" data-toggle="collapse" href="#autreRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><h5>Autres disponibilités</h5></a>
+                        <a class="btn ns-btn col-md-4 text-wrap " id="btnPolitique" data-toggle="collapse" href="#politiqueAnnulation" role="button" aria-expanded="false" aria-controls="politiqueAnnulation"><h5>Politique rendez-vous</h5></a>
                     </div>
                 </div>
                 <div class="row">
@@ -91,16 +91,16 @@
 
                                 </div>
                                 <div class=" btn-toolbar bg-danger" role="toolbar" aria-label="Toolbar with button groups">
-                                    
-                                    
+
+
                                 </div>
                                 <div class="container mt-1">
                                     <div class="row">
                                         <div class=" col-md-4 col-sm-12">
-                                           <button  type="button" class="btn ns-btn btn-sm font-weight-bold w-100">Fermer</button>
+                                            <button type="button" class="btn ns-btn btn-sm font-weight-bold w-100">Fermer</button>
                                         </div>
                                         <div class="col-md-4 col-sm-0">
-                                            
+
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <button type="button" class="btn ns-btn btn-sm font-weight-bold w-100">Poursuivre</button>
@@ -122,7 +122,57 @@
                             </div>
                         </div>
                     </div>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                            crossorigin="anonymous"></script>
+                    <script>
+                        $('#autreRdv').hide();
+                        $('#politiqueAnnulation').hide();
+                        $('#vosRdv').hide();
+                        $(document).ready(function () {
+                            //var visibilite = jQuery('#vosRdv').is(: visible);
+                            //if ($("#vosRdv").is(":visible")) { alert("#monelement est visible"); }
 
+
+
+                            $('#btnRDV').on('click', function () {
+                                var visibiliti = jQuery("#vosRdv").is(":visible");
+                                if (visibiliti) {
+                                    $('#vosRdv').hide();
+                                }
+                                else {
+                                    $('#autreRdv').hide();
+                                    $('#politiqueAnnulation').hide();
+                                    $('#vosRdv').show();
+                                }
+                            });
+
+                            $('#btnAutre').on('click', function () {
+                                var visibiliti = jQuery("#autreRdv").is(":visible");
+                                if (visibiliti) {
+                                    $('#autreRdv').hide();
+                                }
+                                else {
+                                    $('#vosRdv').hide();
+                                    $('#politiqueAnnulation').hide();
+                                    $('#autreRdv').show();
+                                }
+                            });
+
+                            $('#btnPolitique').on('click', function () {
+                                var visibiliti = jQuery("#politiqueAnnulation").is(":visible");
+                                if (visibiliti) {
+                                    $('#politiqueAnnulation').hide();
+                                }
+                                else {
+                                    $('#autreRdv').hide();
+                                    $('#vosRdv').hide();
+                                    $('#politiqueAnnulation').show();
+                                }
+                            });
+
+                        });
+                    </script>
                 </div>
             </div>
 
