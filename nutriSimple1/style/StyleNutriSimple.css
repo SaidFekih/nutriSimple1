@@ -13,3 +13,16 @@
 .colorNS {
     background-color: #82C143;
 }
+
+
+.ns-btn {
+    color: #fff;
+    background-color: #82C143;
+    border-color: #28a745;
+}
+
+.ns-btn:hover {
+    color: #1e7e34;
+    background-color: #ADB5BD;
+    border-color: #1e7e34;
+}

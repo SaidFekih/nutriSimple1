@@ -26,10 +26,10 @@
 
                 </div>
                 <div class="row">
-                    <div class="btn-group mx-auto" role="group" aria-label="">
-                        <a class="btn btn-success bg-ns-primary  col-sm-10 col-md-4 text-lg-center" data-toggle="collapse" href="#vosRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><i class="bi bi-calendar2-check"></i><h5>Vos rendez-vous</h5></a>
-                        <a class="btn btn-success bg-ns-primary col-sm-10 col-md-4 text-wrap" data-toggle="collapse" href="#autreRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><h5>Autres disponibilités</h5></a>
-                        <a class="btn btn-success bg-ns-primary col-md-4 text-wrap " data-toggle="collapse" href="#politiqueAnnulation" role="button" aria-expanded="false" aria-controls="politiqueAnnulation"><h5>Politique rendez-vous</h5></a>
+                    <div class="btn-group btn-group-toggle mx-auto" role="group" aria-label="">
+                        <a class="btn ns-btn col-sm-10 col-md-4 text-lg-center" data-toggle="collapse" href="#vosRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><i class="bi bi-calendar2-check"></i><h5>Vos rendez-vous</h5></a>
+                        <a class="btn ns-btn col-sm-10 col-md-4 text-wrap" data-toggle="collapse" href="#autreRdv" role="button" aria-expanded="false" aria-controls="autreRdv"><h5>Autres disponibilités</h5></a>
+                        <a class="btn ns-btn col-md-4 text-wrap " data-toggle="collapse" href="#politiqueAnnulation" role="button" aria-expanded="false" aria-controls="politiqueAnnulation"><h5>Politique rendez-vous</h5></a>
                     </div>
                 </div>
                 <div class="row">
@@ -68,11 +68,45 @@
                         <div class="collapse mb-1" id="autreRdv">
                             <div class="card card-body">
                                 <p class="text-break">
-                                    Afficher une liste des places disponibles.
-                                    Pour éviter la facturation de la rencontre prévue, vous devez annuler 48h AVANT votre rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
-                                    Toute requête d'annulation à l'intérieur d'une période de 2 jours avant un rendez-vous doit se faire par téléphone.
+                                    Choisissez une ou plusieurs cliniques <span class="font-weight-bold">:</span>  <br /><br />
+                                    Depuis les <span class="font-weight-bold">10 dernières années</span> NutriSimple suit des centaines de clients en PRÉSENTIEL et en TÉLÉCONSULTATION (Skype/Teams, Téléphone, Facetime, Zoom)
                                 </p>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <ul class="nav nav-tabs card-header-tabs">
+                                            <li class="nav-item col-md-6 col-sm-12">
+                                                <a class="nav-link active" data-toggle="tab" role="tab" href="#nutListView">1 - Choisir nutritionnistes</a>
+                                            </li>
+                                            <li class="nav-item col-md-6 col-sm-12">
+                                                <a class="nav-link " data-toggle="tab" role="tab" href="#cliListView">2 - Choisir cliniques</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="nutListView">Afficher liset des nutritionnistes <br /><span class="text-warning">Ajouter la forme de la liset </span></div>
+                                            <div role="tabpanel" class="tab-pane " id="cliListView"> Afficher liset des cliniques <br /><span class="text-warning">Ajouter la forme de la liset </span></div>
+                                        </div>
+                                    </div>
 
+                                </div>
+                                <div class=" btn-toolbar bg-danger" role="toolbar" aria-label="Toolbar with button groups">
+                                    
+                                    
+                                </div>
+                                <div class="container mt-1">
+                                    <div class="row">
+                                        <div class=" col-md-4 col-sm-12">
+                                           <button  type="button" class="btn ns-btn btn-sm font-weight-bold w-100">Fermer</button>
+                                        </div>
+                                        <div class="col-md-4 col-sm-0">
+                                            
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <button type="button" class="btn ns-btn btn-sm font-weight-bold w-100">Poursuivre</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="collapse mb-1" id="politiqueAnnulation">
@@ -81,6 +115,9 @@
                                 <p class="w-75">
                                     Pour éviter la facturation de la rencontre prévue, vous devez annuler 48h AVANT votre rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
                                     Toute requête d'annulation à l'intérieur d'une période de 2 jours avant un rendez-vous doit se faire par téléphone.
+                                    <div>
+
+                                    </div>
                                 </p>
                             </div>
                         </div>
