@@ -34,7 +34,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
-                        <div class="collapsing " id="vosRdv">
+                        <div class="collapse " id="vosRdv">
                             <div class="card card-body bg-transparent border-0">
                                 <div class="card">
                                     <h5 class="card-header">Afficher date RDV</h5>
@@ -74,18 +74,119 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <ul class="nav nav-tabs card-header-tabs">
-                                            <li class="nav-item col-md-6 col-sm-12">
+                                            <li class="nav-item col-md-3 col-sm-6 ">
                                                 <a class="nav-link active" data-toggle="tab" role="tab" href="#nutListView">1 - Choisir nutritionnistes</a>
                                             </li>
-                                            <li class="nav-item col-md-6 col-sm-12">
+                                            <li class="nav-item col-md-3 col-sm-6">
                                                 <a class="nav-link " data-toggle="tab" role="tab" href="#cliListView">2 - Choisir cliniques</a>
+                                            </li>
+                                            <li class="nav-item col-md-3 col-sm-6">
+                                                <a class="nav-link " data-toggle="tab" role="tab" href="#jourRdv">3 - Choisir jour</a>
+                                            </li>
+                                            <li class="nav-item col-md-3 col-sm-6">
+                                                <a class="nav-link " data-toggle="tab" role="tab" href="#heurRdv">4 - Choisir heur</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="card-body">
                                         <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane active" id="nutListView">Afficher liset des nutritionnistes <br /><span class="text-warning">Ajouter la forme de la liset </span></div>
-                                            <div role="tabpanel" class="tab-pane " id="cliListView"> Afficher liset des cliniques <br /><span class="text-warning">Ajouter la forme de la liset </span></div>
+                                            <div role="tabpanel" class="tab-pane active" id="nutListView">
+                                                Cochez une ou plusieurs nutritionnistes <br />
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Nutritionniste X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Nutritionniste X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Nutritionniste X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Nutritionniste X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Nutritionniste X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane " id="cliListView">
+                                                Cochez une ou plusieurs cliniques
+                                                <br /> <br />
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Clinique X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Clinique X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Clinique X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Clinique X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Clinique X
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane active" id="jourRdv">
+                                                Afficher les jours disponible pour le RDV
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane active" id="heurRdv">
+                                                afficher les heures disponible pour les RDV
+                                            </div>
                                         </div>
                                     </div>
 
@@ -112,8 +213,8 @@
                         <div class="collapse mb-1" id="politiqueAnnulation">
                             <div class="card card-body ">
 
-                                <p class="w-75">
-                                    Pour éviter la facturation de la rencontre prévue, vous devez annuler 48h AVANT votre rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
+                                <p class="w-100">
+                                    Pour éviter la facturation de la rencontre prévue, vous devez annuler <span class="text-warning font-weight-bold">48h AVANT</span> votre rendez-vous. Un rendez-vous téléphonique ou par Skype est une alternative offerte.
                                     Toute requête d'annulation à l'intérieur d'une période de 2 jours avant un rendez-vous doit se faire par téléphone.
                                     <div>
 
@@ -136,8 +237,8 @@
 
 
                             $('#btnRDV').on('click', function () {
-                                var visibiliti = jQuery("#vosRdv").is(":visible");
-                                if (visibiliti) {
+                                var visibiliti0 = jQuery("#vosRdv").is(":visible");
+                                if (visibiliti0) {
                                     $('#vosRdv').hide();
                                 }
                                 else {
@@ -148,20 +249,21 @@
                             });
 
                             $('#btnAutre').on('click', function () {
-                                var visibiliti = jQuery("#autreRdv").is(":visible");
-                                if (visibiliti) {
+                                var visibiliti1 = jQuery("#autreRdv").is(":visible");
+                                if (visibiliti1) {
                                     $('#autreRdv').hide();
                                 }
                                 else {
+                                    $('#autreRdv').show();
                                     $('#vosRdv').hide();
                                     $('#politiqueAnnulation').hide();
-                                    $('#autreRdv').show();
+
                                 }
                             });
 
                             $('#btnPolitique').on('click', function () {
-                                var visibiliti = jQuery("#politiqueAnnulation").is(":visible");
-                                if (visibiliti) {
+                                var visibiliti2 = jQuery("#politiqueAnnulation").is(":visible");
+                                if (visibiliti2) {
                                     $('#politiqueAnnulation').hide();
                                 }
                                 else {
