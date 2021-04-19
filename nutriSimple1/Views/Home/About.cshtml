@@ -1,7 +1,109 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
 
-<p>Use this area to provide additional information.</p>
+                <li role="presentation" class="nav-item active">
+                    <a class="nav-link" href="#nutListView" aria-controls="nutListView" role="tab" data-toggle="tab"
+                       aria-expanded="true">
+                        1 - Step 1
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="#cliListView" aria-controls="cliListView" role="tab" data-toggle="tab"
+                       aria-expanded="false">
+                        2 - Step 2
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#jourRdv" aria-controls="jourRdv" role="tab" data-toggle="tab" 
+                       aria-expanded="false">
+                        3- Step 3               
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content">
+
+                <div role="tabpanel" class="tab-pane active" id="nutListView">
+                    <h3 class="">Cochez une ou plusieurs nutritionnistes</h3>
+
+                    <button type="button" class="suivant"> Continue</button>
+                    @*<a class="btn btn-primary suivant">Continue</a>*@
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="cliListView">
+                    <h3 class="">Cochez une ou plusieurs cliniques</h3>
+                    <button type="button" class="prevBtn"> Go Back</button>
+                    <button type="button" class="suivant"> Continue</button>
+
+                    @*<a class="btn btn-primary prevBtn">Go Back</a>
+                    <a class="btn btn-primary suivant">Continue</a>*@
+                </div>
+                <div role="tabpanel" class="tab-pane" id="jourRdv">
+                    <h3 class="">Afficher les jours disponible pour le RDV</h3>
+                    <button type="button" class="prevBtn btn btn-danger"> Go Back</button>
+                    <button type="button" class="suivant"> Continue</button>
+                    @*<a class="btn btn-primary prevBtn">Go Back</a>
+                    <a class="btn btn-primary suivant">Continue</a>*@
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+    const etaps = Array.from(document.querySelectorAll('div .tab-pane'));
+    const nextBtn = document.querySelectorAll('div .suivant');
+    const prevBtn = document.querySelectorAll('div .prevBtn');
+    const card = document.querySelectorAll('tab-content');
+    console.log(card);
+
+    nextBtn.forEach(button => {
+        button.addEventListener('click', (e) => {
+            changeEtap('next');
+        })
+    })
+    prevBtn.forEach(button => {
+        button.addEventListener('click', () => {
+            changeEtap('prev');
+        })
+    })
+
+    function changeEtap(btn) {
+        let index = 0;
+        const active = document.querySelector('div .tab-pane.active');
+        index = etaps.indexOf(active);
+        etaps[index].classList.remove('active');
+        if (btn === 'next') {
+            index++
+        }
+        else if (btn === 'prev') {
+            index--
+        }
+        etaps[index].classList.add('active');
+        console.log(index)
+    }
+
+
+
+
+    //$('.continue').click(function () {
+    //    $('.nav-tabs> .active').next('li').find('a').trigger('click');
+    //});
+
+    //$('.back').click(function () {
+    //    $('.nav-tabs> .active').prev('li').find('a').trigger('click');
+    //});
+
+</script>
