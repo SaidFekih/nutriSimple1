@@ -24,6 +24,9 @@ namespace nutriSimple1
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/site.css" ,
                       "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/style/css").Include(
+                      "~/style/StyleNutriSimple.css"));
+
         }
     }
 }

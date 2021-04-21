@@ -275,6 +275,7 @@
     <Content Include="Views\Home\Rendezvous.cshtml" />
     <Content Include="Views\Home\DeplacerRDV.cshtml" />
     <Content Include="Views\Home\AutresRDV.cshtml" />
+    <Content Include="Views\Home\JournalAlimentaire.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

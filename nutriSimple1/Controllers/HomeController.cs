@@ -44,5 +44,11 @@ namespace nutriSimple1.Controllers
 
             return View();
         }
+        public ActionResult JournalAlimentaire()
+        {
+            ViewBag.Message = "Journal alimentaire.";
+
+            return View();
+        }
     }
 }

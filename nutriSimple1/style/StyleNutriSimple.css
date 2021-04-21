@@ -13,6 +13,9 @@
 .colorNS {
     background-color: #82C143;
 }
+.colorNS-primary {
+    color: #82C143;
+}
 
 
 .ns-btn {
@@ -26,3 +29,10 @@
     background-color: #ADB5BD;
     border-color: #1e7e34;
 }
+
+
+
+.ns-border-top {
+    border-top: 5px solid #28a745 !important;
+}
+
