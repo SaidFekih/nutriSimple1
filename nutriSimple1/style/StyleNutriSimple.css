@@ -9,7 +9,9 @@
 .sizeTextBig {
     font-size: 30px;
 }
-
+.sizeTextMedium {
+    font-size: 20px;
+}
 .colorNS {
     background-color: #82C143;
 }
@@ -33,6 +35,8 @@
 
 
 .ns-border-top {
-    border-top: 5px solid #28a745 !important;
+    border-top: 5px solid #28a745 ;
 }
-
+.ns-thick-top-medium{
+    
+}

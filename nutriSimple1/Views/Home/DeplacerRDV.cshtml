@@ -41,8 +41,8 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Le nom du diététiste </h5>
                                         <p class="card-text">TÉLÉCONSULTATION (Skype/Teams, Telephone, FaceTime).</p>
-                                        <a href="#" class="btn btn-success font-weight-bold">DÉPLACER</a>
-                                        <a href="#" class="btn btn-success font-weight-bold ">Annuler</a>
+                                        <a href="#" class="btn btn-success font-weight-bold " onclick="funDeplacerRdv()">DÉPLACER</a>
+                                        <a href="#" class="btn btn-success font-weight-bold btnAnnulerRDV">Annuler</a>
 
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@
                                             <li class="nav-item active col-md-3 col-sm-6 ">
                                                 <a class="nav-link active d-flex justify-content-around  "  data-toggle="tab" role="tab" href="#nutListView">
                                                     <section>
-                                                        Etap 1
+                                                        Étape 1
                                                     </section>
                                                     <section>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person text-success " viewBox="0 0 16 16">
@@ -89,7 +89,7 @@
                                             <li class="nav-item col-md-3 col-sm-6">
                                                 <a class="nav-link d-flex justify-content-around " data-toggle="tab" role="tab" href="#cliListView">
                                                     <section>
-                                                        Etap 2
+                                                        Étape  2
                                                     </section>
                                                     <section>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-building text-success" viewBox="0 0 16 16">
@@ -102,7 +102,7 @@
                                             <li class="nav-item col-md-3 col-sm-6">
                                                 <a class="nav-link d-flex justify-content-around" data-toggle="tab" role="tab" href="#jourRdv">                    
                                                     <section>
-                                                        Etap 3
+                                                        Étape  3
                                                     </section>
                                                     <section>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 text-success" viewBox="0 0 16 16">
@@ -115,7 +115,7 @@
                                             <li class="nav-item col-md-3 col-sm-6 ">
                                                 <a class="nav-link d-flex justify-content-around " data-toggle="tab" role="tab" href="#heurRdv">
                                                     <section>
-                                                        Etap 4
+                                                        Étape  4
                                                     </section>
                                                     <section>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock text-success" viewBox="0 0 16 16">
@@ -370,6 +370,12 @@
                             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
                             crossorigin="anonymous"></script>
                     <script>
+                        function funDeplacerRdv() {
+                            $('#autreRdv').show();
+                            $('#politiqueAnnulation').hide();
+                            $('#vosRdv').hide();
+                            alert("test");
+                        };
                         // changement des windows (vos rdv - autre rdv - politique rdv)
                         $('#autreRdv').hide();
                         $('#politiqueAnnulation').hide();
@@ -377,8 +383,6 @@
                         $(document).ready(function () {
                             //var visibilite = jQuery('#vosRdv').is(: visible);
                             //if ($("#vosRdv").is(":visible")) { alert("#monelement est visible"); }
-
-
 
                             $('#btnRDV').on('click', function () {
                                 var visibiliti0 = jQuery("#vosRdv").is(":visible");
@@ -421,6 +425,7 @@
                     </script>
                     <script>
                         // choisir nouveau RDV
+
                         const etaps = Array.from(document.querySelectorAll('div .tab-pane'));
                         const headCard = Array.from(document.querySelectorAll('li .nav-link'));
                         console.log(headCard);

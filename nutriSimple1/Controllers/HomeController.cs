@@ -50,5 +50,11 @@ namespace nutriSimple1.Controllers
 
             return View();
         }
-    }
+		public ActionResult CourbesDeCroissance()
+		{
+			ViewBag.Message = "Courbes De Croissance.";
+
+			return View();
+		}
+	}
 }
